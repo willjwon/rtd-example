@@ -4,7 +4,7 @@ copyright = '2023, Will Won'
 author = 'Will Won'
 
 # Version of documentation
-version = '1.0'
+version = '1.1'
 release = version
 
 # Sphinx Setup: Initialization
