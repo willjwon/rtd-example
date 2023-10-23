@@ -24,7 +24,7 @@ jobs:
       - name: Setup Sphinx
         run: |
           pip3 install --upgrade pip
-          pip3 install -U sphinx sphinx-rtd-theme myst-parser
+          pip3 install -U gitpython sphinx sphinx-rtd-theme myst-parser
 
       - name: Compile Documentation
         run: sphinx-build -b html -j$(nproc) . ./_build/html
