@@ -27,7 +27,12 @@ jobs:
           pip3 install -U gitpython sphinx sphinx-rtd-theme myst-parser
 
       - name: Compile Documentation
-        run: sphinx-build -b html -j$(nproc) . ./_build/html
+        run: |
+          sphinx-build \
+            -b html \
+            -j$(nproc) \
+            -d ./_build/doctree \
+            . ./_build/html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
