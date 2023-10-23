@@ -4,7 +4,7 @@ copyright = '2023, Will Won'
 author = 'Will Won'
 
 # Version of documentation
-version = 'latest'
+version = '2.0'
 release = version
 
 # Sphinx Setup: Initialization
@@ -25,9 +25,13 @@ html_static_path = ['_static']
 from git import Repo
 repo = Repo()
 versions = [tag.name for tag in repo.tags]
+versions.append('latest')
 
 html_context['versions'] = list()
 for version in versions:
-    link = f'{version}/'
+    if version == 'latest':
+        link = f''
+    else:
+        link = f'{version}/'
     version_value = (version, link)
     html_context['versions'].append(version_value)

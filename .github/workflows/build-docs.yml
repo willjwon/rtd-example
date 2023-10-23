@@ -26,13 +26,8 @@ jobs:
           pip3 install --upgrade pip
           pip3 install -U gitpython sphinx sphinx-rtd-theme myst-parser
 
-      - name: Compile Latest Documentation
-        run: |
-          sphinx-build \
-            -b html \
-            -j$(nproc) \
-            -d ./_build/doctree \
-            . ./_build/html
+      - name: Compile Documents
+        run: ./buildDocs.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
