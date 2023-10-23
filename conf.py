@@ -7,6 +7,9 @@ author = 'Will Won'
 version = '2.0'
 release = version
 
+# Base URL
+html_baseurl = 'https://www.willjwon.com/rtd-example'
+
 # Sphinx Setup: Initialization
 html_context = dict()
 
@@ -30,8 +33,9 @@ versions.append('latest')
 html_context['versions'] = list()
 for version in versions:
     if version == 'latest':
-        link = f'/index.html'
+        link = f'{html_baseurl}/index.html'
     else:
-        link = f'/{version}/index.html'
+        link = f'{html_baseurl}/{version}/index.html'
+        
     version_value = (version, link)
     html_context['versions'].append(version_value)
