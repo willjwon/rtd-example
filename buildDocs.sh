@@ -29,3 +29,6 @@ for version in "${versions[@]:?}"; do
         -d ./_build/doctree \
         . ./_build/html/"${version:?}"
 done
+
+# Return to the latest branch
+git checkout main

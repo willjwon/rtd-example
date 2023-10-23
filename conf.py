@@ -33,9 +33,9 @@ versions.append('latest')
 html_context['versions'] = list()
 for version in versions:
     if version == 'latest':
-        link = f'{html_baseurl}/index.html'
+        link = f'/index.html'
     else:
-        link = f'{html_baseurl}/{version}/index.html'
+        link = f'/{version}/index.html'
         
     version_value = (version, link)
     html_context['versions'].append(version_value)
