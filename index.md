@@ -2,7 +2,6 @@
 
 :::{toctree}
 test.md
-test2.md
 :::
 
 ## Test
@@ -24,33 +23,4 @@ Here's my admonition content
 :class: important
 
 Testing
-:::
-
-:::{admonition} Hello
-:class: seealso
-
-See Also!
-:::
-
-:::{admonition} This is my admonition
-This is my note
-:::
-
-:::{code-block} cpp
-:lineno-start: 1
-
-int a = 3;
-std::cout << "Hello, world!" << sd::endl;
-:::
-
-:::{note}
-Hello world!
-:::
-
-:::{warning}
-Warning
-:::
-
-:::{error}
-Error
 :::
