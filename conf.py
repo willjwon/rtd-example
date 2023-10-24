@@ -4,7 +4,7 @@ copyright = '2023, Will Won'
 author = 'Will Won'
 
 # Version of documentation
-version = '2.0'
+version = '1.0'
 release = version
 
 # Sphinx Setup: Initialization
@@ -18,7 +18,7 @@ html_theme = 'sphinx_rtd_theme'
 
 # Sphinx Setup: Paths
 templates_path = ['_templates']
-exclude_patterns = ['_build', '.DS_Store', 'README.md']
+exclude_patterns = ['_build', '_scripts', '.DS_Store', 'README.md']
 html_static_path = ['_static']
 
 # Sphinx Setup: Versioning

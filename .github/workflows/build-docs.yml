@@ -30,7 +30,7 @@ jobs:
           pip3 install -U gitpython sphinx sphinx-rtd-theme myst-parser
 
       - name: Compile Documents
-        run: ./buildDocs.sh
+        run: ./_scripts/build_all_docs.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
